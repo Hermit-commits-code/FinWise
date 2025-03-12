@@ -17,7 +17,7 @@ class FinWiseApp extends StatelessWidget {
     return MaterialApp(
       title: 'FinWise',
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/', // Define the initial route.
+      initialRoute: '/login', // Define the initial route.
       routes: {
         '/': (context) => HomeScreen(), // Route for the home screen.
         '/login': (context) => LoginScreen(), // Route for the login screen.

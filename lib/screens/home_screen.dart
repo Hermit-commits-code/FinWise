@@ -5,7 +5,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('FinWise')),
+      appBar: AppBar(title: Text('Home')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -13,14 +13,14 @@ class HomeScreen extends StatelessWidget {
             Text('Welcome to FinWise - Your Financial Planning App'),
             ElevatedButton(
               onPressed: () {
-                // Navigate to the login screen when the button is pressed.
-                Navigator.pushNamed(context, '/login');
+                // Handle logout logic and navigate to login screen.
+                Navigator.pushReplacementNamed(context, '/login');
               },
-              child: Text('Login'),
+              child: Text('Logout'),
             ),
             ElevatedButton(
               onPressed: () {
-                // Navigate to the registration screen when the button is pressed
+                // Navigate to the registration screen.
                 Navigator.pushNamed(context, '/register');
               },
               child: Text('Register'),

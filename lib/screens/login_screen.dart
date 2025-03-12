@@ -42,7 +42,7 @@ class LoginScreen extends StatelessWidget {
 
                 if (response.statusCode == 200) {
                   // Navigate to the home screen on successful login.
-                  Navigator.pushNamed(context, '/');
+                  Navigator.pushReplacementNamed(context, '/');
                 } else {
                   // Show error message on failed login.
                   ScaffoldMessenger.of(

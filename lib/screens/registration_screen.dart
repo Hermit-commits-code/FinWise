@@ -56,7 +56,7 @@ class RegistrationScreen extends StatelessWidget {
 
                 if (response.statusCode == 200) {
                   // Navigate to the login screen on successful registration.
-                  Navigator.pushNamed(context, '/login');
+                  Navigator.pushReplacementNamed(context, '/login');
                 } else {
                   // Show error message on failed registration.
                   ScaffoldMessenger.of(context).showSnackBar(
